@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Amigo invisible Mario</h2>
+    <p>estos son los participantes:
+        <button type="button" onclick="clearParticipants();">Borrar toda la lista</button>
+    <ul id="listaParticipantes">
+    </ul>
+    </p>
+
+    <hr>
+
+    <form id="myForm" onsubmit="addParticipant();return false">
+        <label for="firstName">Enter Name</label>
+        <input type="text" id="enteredName" name="getNameValue" />
+        <button type="button" onclick="addParticipant();">Enter Name</button>
+        <input type="reset" value="Limpiar" />
+    </form>
+
+    <hr>
+
+
+
+    <button id="sortear" type="button" onclick="doRoll();">Hacer Sorteo</button>
+
+    <section class="cards" id="cards">
+        <div class="cards__single">
+            <div class="cards__front">
+                <h1 class="cards__artist" tabindex="0">Usuario 1</h1>
+            </div>
+            <div class="cards__back">
+                <h2 tabindex="0">Regalas a Mario</h2>
+            </div>
+        </div>
+        <div class="cards__single">
+            <div class="cards__front">
+                <h1 class="cards__artist" tabindex="0">Usuario 1</h1>
+            </div>
+            <div class="cards__back">
+                <h2 tabindex="0">Regalas a Mario</h2>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+<script src="amigoInvisible.js"></script>
+<link rel="stylesheet" href="invisible.css">
+
+</html>
