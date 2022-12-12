@@ -1,8 +1,4 @@
 let participantes = []
-participantes.push("usuario1")
-participantes.push("usuario2")
-participantes.push("usuario3")
-participantes.push("usuario4")
 
 let participantesSinRegalo
 let participantesQueYaRegalan
